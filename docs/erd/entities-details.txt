@@ -1,0 +1,20 @@
+User
+- id (Primary Key) - UUID (auto-generated)
+- userName (Unique Key)
+- firstName - String
+- lastName - String
+- email - String (Unique Key)
+- password - String
+
+Project
+- id (Primary Key) - UUID (auto-generated)
+- title - String
+- description - String
+- user_id (Foreign Key, references User.id)
+
+Task
+- id (Primary Key) - UUID (auto-generated)
+- titile - String 
+- description - String
+- status - Boolean
+- project_id (Foreign Key, references Project.id)
